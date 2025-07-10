@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+.build/
+.cache/
+dist/
+.tmp/
+.env
+.env.*
+*.log
+
+# Public uploads
+public/uploads/
+!public/uploads/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+nbproject/
+
+# Other
+*.tsbuildinfo
+.eslintcache
+lib-cov
+coverage
+pids
+logs
+results
