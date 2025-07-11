@@ -6,7 +6,7 @@ export default ({ env }) => ({
       port: env.int('PGPORT', 5432),
       database: env('PGDATABASE', 'railway'),
       user: env('PGUSER', 'postgres'),
-      password: env('PGPASSWORD', 'password'),
+      password: env('PGPASSWORD', 'vKHxnThzIVfwsuFoHCfyYUUrIZffrhkE'),
       ssl: env.bool('PGSSL', true),
     },
     pool: {
