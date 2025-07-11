@@ -1,9 +1,22 @@
+// path: ./config/middlewares.js
+
 export default [
-  'strapi::logger',
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      headers: '*',
+      origin: [
+        'http://localhost:3000', // رابط التطوير المحلي
+        'https://my-blog-backend-production-b97d.up.railway.app', // رابط الإنتاج
+        // أضف أي روابط أخرى تحتاجها هنا
+      ],
+    },
+  },
   'strapi::poweredBy',
+  'strapi::logger',
   'strapi::query',
   'strapi::body',
   'strapi::session',
